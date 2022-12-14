@@ -5,6 +5,7 @@ import 'package:sutoli/view/home_page.dart';
 import 'package:sutoli/view/reg_page.dart';
 import 'package:sutoli/view/siginin_page.dart';
 import 'package:sutoli/view/splash_page.dart';
+import 'package:sutoli/view/transaction_page.dart';
 import 'package:sutoli/view/welcome_page.dart';
 import 'package:sutoli/viewmodel/provider/userprovider.dart';
 
@@ -31,12 +32,13 @@ class _MyAppState extends State<MyApp> {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(primarySwatch: Colors.blue),
-          home: const SplashPage(),
+          home: const HomePage(),
           routes: {
             WelcomePage.routename: (context) => const WelcomePage(),
             userregistration.routename: (context) => const userregistration(),
             usersignin.routename: (context) => const usersignin(),
             HomePage.routename: (context) => const HomePage(),
+            transactionPage.routename: (context) => const transactionPage(),
           },
         ));
   }
