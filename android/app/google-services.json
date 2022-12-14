@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973950684605",
+    "project_id": "sutoli-ecomapp",
+    "storage_bucket": "sutoli-ecomapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973950684605:android:dd2471a731db7d2e9b16d4",
+        "android_client_info": {
+          "package_name": "com.example.sutoli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973950684605-q27u2mvtukas3u3gbdutba2nfeoa0u0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4jo6g0VAs_jEK5vzApPXhQlQFSqcB2jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973950684605-q27u2mvtukas3u3gbdutba2nfeoa0u0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

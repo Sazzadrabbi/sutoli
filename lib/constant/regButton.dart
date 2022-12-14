@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sutoli/view/reg_page.dart';
 
 class RegButton extends StatelessWidget {
   const RegButton({super.key});
@@ -8,7 +9,7 @@ class RegButton extends StatelessWidget {
     return Center(
       child: InkWell(
         onTap: () {
-          // Navigator.pushNamed(context, sellersignin.routenames);
+          Navigator.pushNamed(context, userregistration.routename);
         },
         child: Container(
           width: 320.0,

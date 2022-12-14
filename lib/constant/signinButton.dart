@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sutoli/view/siginin_page.dart';
 
 class SigninButton extends StatelessWidget {
   const SigninButton({super.key});
@@ -8,7 +9,7 @@ class SigninButton extends StatelessWidget {
     return Center(
       child: InkWell(
         onTap: () {
-          // Navigator.pushNamed(context, sellersignin.routenames);
+          Navigator.pushNamed(context, usersignin.routename);
         },
         child: Container(
           width: 320.0,

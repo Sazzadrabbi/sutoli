@@ -3,7 +3,7 @@ import 'package:sutoli/constant/regButton.dart';
 import 'package:sutoli/constant/signinButton.dart';
 
 class WelcomePage extends StatefulWidget {
-  static const routename = 'WelcomePage';
+  static const String routename = 'WelcomePage';
   const WelcomePage({super.key});
 
   @override
