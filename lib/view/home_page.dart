@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sutoli/view/details_page.dart';
 import 'package:sutoli/view/transaction_page.dart';
 
 import '../model/product.dart';
@@ -64,8 +65,8 @@ class _HomePageState extends State<HomePage> {
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio: 0.75,
-                      mainAxisSpacing: 2,
-                      crossAxisSpacing: 2,
+                      mainAxisSpacing: 20.0,
+                      crossAxisSpacing: 20.0,
                     ),
                     itemBuilder: (context, index) => itemCard(
                       product: products[index],
@@ -99,25 +100,33 @@ class itemCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        InkWell(
-          onTap: (() {
-            Navigator.pushNamed(context, transactionPage.routename);
-          }),
-          child: Container(
-            padding: EdgeInsets.all(10.0),
-            height: 180,
-            width: 160,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(16),
+        Container(
+          padding: const EdgeInsets.all(10.0),
+          height: 200,
+          width: 160,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, detailsPage.routename);
+            },
+            child: Image.asset(
+              products[0].image,
             ),
-            child: Image.asset(products[0].image),
           ),
         ),
-        Text(
-          products[0].title,
+        Row(
+          children: [
+            Text(products[0].title),
+            const SizedBox(
+              width: 60.0,
+            ),
+            Text("\$${product.price}"),
+          ],
         ),
-        Text("\$${product.price}"),
+        const Text('Category: Shirt')
       ],
     );
   }

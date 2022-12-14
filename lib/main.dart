@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sutoli/view/details_page.dart';
 import 'package:sutoli/view/home_page.dart';
 import 'package:sutoli/view/reg_page.dart';
 import 'package:sutoli/view/siginin_page.dart';
@@ -32,12 +33,13 @@ class _MyAppState extends State<MyApp> {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(primarySwatch: Colors.blue),
-          home: const HomePage(),
+          home: const SplashPage(),
           routes: {
             WelcomePage.routename: (context) => const WelcomePage(),
             userregistration.routename: (context) => const userregistration(),
             usersignin.routename: (context) => const usersignin(),
             HomePage.routename: (context) => const HomePage(),
+            detailsPage.routename: (context) => const detailsPage(),
             transactionPage.routename: (context) => const transactionPage(),
           },
         ));
